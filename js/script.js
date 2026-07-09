@@ -66,14 +66,23 @@ function agregarObra() {
         document.querySelector("#consumo").value = "";
         document.querySelector("#costo").value = "";
 
-   // una vez cargadas todas las obras
-        if (contador == cantidadObras) {
-            botonAgregar.disabled = true; // se deshabilita el botón agregar
-            botonCalcular.disabled = false; // se habilita el botón calcular
-            alert("obras cargadas");
+// una vez cargadas todas las obras
+   if (contador == cantidadObras) {
+    botonAgregar.disabled = true; // se deshabilita el botón agregar
+    botonCalcular.disabled = false; // se habilita el botón calcular
+    alert("obras cargadas");
 
         }
 
     }
 
 }
+
+// calcular resultados 
+botonCalcular.addEventListener("click", calcular); // al hacer click en calcular, se ejecuta la función
+function calcular() {
+    let consumoTotal = 0; // acumulador del consumo total
+    let promedio = 0; // variable para guardar el promedio
+    let mayorTiempo = horas[0]; // toma la primera obra como referencia para buscar cuál tiene el mayor tiempo de funcionamiento
+    let nombreMayor = nombres[0]; // guarda el nombre de la primera obra
+    let costoMayor = luces[0] * horas[0] * consumo[0] * costo[0]; // calcula el costo diario
