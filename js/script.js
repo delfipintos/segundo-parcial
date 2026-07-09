@@ -120,3 +120,10 @@ function calcular() {
 
     butonCalcular.disabled = true; // se deshabilita el botón calcular
     butonReiniciar.disabled = false; // habilita el botón reiniciar
+
+// reiniciar sistema
+butonReiniciar.addEventListener("click", reiniciar);
+function reiniciar() {
+    location.reload();
+
+}
