@@ -5,12 +5,12 @@ body {
 }
 
 .contenedor {
-  max-width: 80rem;
-  margin: 3rem auto; 
-  padding: 3%;
-  display:flex; 
-  flex-direction:column;
-  background-color: white;
+    max-width: 80rem;
+    margin: 3rem auto; 
+    padding: 3%;
+    display:flex; 
+    flex-direction:column;
+    background-color: white;
 }
 
 .dos-columnas {
@@ -30,3 +30,11 @@ body {
     display:flex;
     gap:2rem;
 }
+
+h1, h2, legend, nav {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+    
