@@ -20,3 +20,7 @@ let imagenes = [
   "img/questions-minute.jpg",
   "img/body-movies.jpg" 
 ];
+
+let galeria = document.querySelector("#galeria");
+for (let i = 0; i < nombres.length; i++) { // agrega una obra a la galería
+    galeria.innerHTML +=
