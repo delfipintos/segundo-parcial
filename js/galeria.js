@@ -15,8 +15,8 @@ let anios = [
 ];
 
 let imagenes = [ 
-  // lozano-hemmer-3 
-  // subir imagen
-  // subir imagen
-  // subir imagen
+  "img/lozano-hemmer-3.jpg"
+  "img/vectorial-elevation.jpg",
+  "img/questions-minute.jpg",
+  "img/body-movies.jpg" 
 ];
