@@ -7,7 +7,7 @@ let costos = [];
 
 // variables
 let cantidadObras = 0;
-let cantidadIngresada = 0; 
+let contador = 0; // cambio de nombre para mayor comodidad 
 
 // buttons
 const botonCantidad = document.querySelector("#botonCantidad");
@@ -86,3 +86,37 @@ function calcular() {
     let mayorTiempo = horas[0]; // toma la primera obra como referencia para buscar cuál tiene el mayor tiempo de funcionamiento
     let nombreMayor = nombres[0]; // guarda el nombre de la primera obra
     let costoMayor = luces[0] * horas[0] * consumo[0] * costo[0]; // calcula el costo diario
+
+    let contador20 = 0; // contador de obras con más de 20 luces
+    
+    for (let i = 0; i < cantidadObras; i++) { // recorre todas las obras cargadas hasta el momento
+        let consumoObra = luces[i] * horas[i] * consumo[i]; // calcula el consumo diario de una obra
+        consumoTotal = consumoTotal + consumoObra; // lo suma al consumo total
+
+        if (horas[i] > mayorTiempo) { // comprueba cuál es la obra que mayor tiempo de funcionamiento tiene
+            mayorTiempo = horas[i];
+            nombreMayor = nombres[i];
+            costoMayor = consumoObra * costo[i]; // calcula el costo diario de esa obra
+        }
+        
+        if (luces[i] > 20) { // si la obra pone en funcionamiento más de 20 luces, aumenta el contador 
+            contador20++;
+        }
+        
+    }
+    
+}
+    promedio = consumoTotal / cantidadObras; // calcula el total del consumo
+    let porcentaje = contador20 * 100 / cantidadObras; // calcula el porcentaje de obras que ponen en funcionamiento más de 20 luces
+
+// muestra todos los resultados obtenidos
+ document.querySelector("#resultado").innerText =
+
+        "consumo diario total: " + consumoTotal + " kWh\n\n" +
+        "consumo promedio por obra: " + promedio + " kWh\n\n" +
+        "obra con mayor tiempo de funcionamiento: " + nombreMayor + "\n" +
+        "costo diario: $" + costoMayor + "\n\n" +
+        "porcentaje de obras con más de 20 luces: " + porcentaje + "%";
+
+    butonCalcular.disabled = true; // se deshabilita el botón calcular
+    butonReiniciar.disabled = false; // habilita el botón reiniciar
