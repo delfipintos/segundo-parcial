@@ -30,4 +30,77 @@
     <main>
         <section>
             <h2> sistema de control de luces móviles </h2>
+             <p> ingresar la cantidad de obras que desea cargar. luego, completar los datos solicitados para cada una. cuando finalice la carga podrá calcular los resultados y reiniciar el sistema. </p>
+        </section>
+
+        <section>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend> cantidad de obras </legend>
+                    <label for="cantidadObras">
+                    cantidad de obras
+                    </label>
+                    <input
+                        type="number"
+                        id="cantidadObras"
+                        min="1"
+                        required>
+                    <button
+                        type="button"
+                        id="botonCantidad">
+                        confirmar
+                    </button>
+                </fieldset>
+
+               <fieldset>
+                    <legend> datos de la obra </legend>
+                    <label for="nombre">
+                    nombre de la obra
+                    </label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        required>
+                 
+                    <label for="luces">
+                    cantidad de luces móviles
+                    </label>
+                    <input
+                        type="number"
+                        id="luces"
+                        min="1"
+                        required>
+                 
+                    <label for="horas">
+                    horas de funcionamiento por día
+                    </label>
+                    <input
+                        type="number"
+                        id="horas"
+                        min="1"
+                        required>
+                 
+                    <label for="consumo">
+                    consumo por hora (kwh)
+                    </label>
+                    <input
+                        type="number"
+                        id="consumo"
+                        min="0"
+                        required>
+                 
+                    <label for="costo">
+                    costo por kWh
+                    </label>
+                    <input
+                        type="number"
+                        id="costo"
+                        min="0"
+                        required>
+                    <button
+                        type="button"
+                        id="botonAgregar">
+                    agregar obra
+                    </button>
+                </fieldset>
 
