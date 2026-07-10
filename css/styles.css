@@ -43,10 +43,10 @@ body {
 }
 
 .tres-columnas section img {
-    width: 100%;      
+    width: 60%;      
     max-width: 22rem;   
     height: auto;    
-    margin-top: 1rem;  
+    margin: 1.5rem auto 0 auto;  
 }
 
 .columna-info {
