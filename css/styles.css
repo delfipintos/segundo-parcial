@@ -29,6 +29,7 @@ body {
     border-style: solid;
 }
 
+/* estructura */
 .dos-columnas {
     display:flex;
     gap:2rem;
@@ -49,6 +50,7 @@ body {
     min-width: 0;
 }
 
+/* foto en 1era columna */
 .foto {
     display: block;
     width: 100%;   
@@ -57,6 +59,7 @@ body {
     margin: 1.5rem 0 0 0;
 }
 
+/* header menú */
 header p {
     margin-top: 0;
     margin-bottom: 0.5rem; 
@@ -66,9 +69,16 @@ header h1 {
     margin-bottom: 0.2rem;
 }
 
+nav ul {
+    margin-top: 0;      
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+
 .curiosidad {
     margin-top: 2rem;
 }
+
+/* 2da pág obras.html 2 columnas */
 
 .columna-info {
     width: 35%;
@@ -90,6 +100,7 @@ header h1 {
     min-width: 0;
 }
 
+/* tipografias enlaces etc */
 h1, h2, legend, nav a {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
@@ -112,12 +123,7 @@ nav a:visited {
   color: #11344a; 
 }
 
-nav ul {
-    margin-top: 0;      
-    padding-left: 1.2rem;
-    margin-bottom: 1rem;
-}
-
+/* galeria javascript 2da pág obras.html */
 #galeria {
     display:flex;
     flex-wrap:wrap;
@@ -136,10 +142,74 @@ nav ul {
     display:block;
 }
 
+/* cita 1era pág index.html */
 .cita {
     margin: 2rem 0;
     padding-left: 1rem;
     border-left: 3px solid #0076a3;
     font-style: italic;  
     color: #555;
+}
+
+/* form */
+fieldset {
+    border: 1px solid #dff6ff;    
+    border-radius: 0.5rem;   
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;     
+    background-color: #fbfeff;  
+}
+
+legend {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    color: #2596be;             
+    padding: 0 0.5rem;        
+    text-decoration: none;  
+}
+
+label {
+    font-weight: 500;
+    color: #495b66;      
+    margin-right: 0.5rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;    
+}
+
+input[type="text"], 
+input[type="number"] {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #bce6f5;    
+    border-radius: 0.25rem;    
+    color: #495b66;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    outline: none;     
+    transition: border-color 0.2s;
+    margin-right: 1.5rem;    
+    margin-bottom: 0.8rem;
+}
+
+button, 
+input[type="button"], 
+input[type="submit"] {
+    background-color: #2596be;    
+    color: white;              
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.25rem;   
+    padding: 0.5rem 1.2rem;
+    transition: background-color 0.2s;
+}
+
+button:hover, 
+input[type="button"]:hover {
+    background-color: #1a6b88; 
+}
+
+button:disabled, 
+input[type="button"]:disabled {
+    background-color: #ccc;    
+    color: #666;
 }
