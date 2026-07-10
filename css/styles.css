@@ -26,7 +26,7 @@ body {
     width:65%;
 }
 
-.tres-columnas{
+.tres-columnas {
     display:flex;
     gap:2rem;
 }
@@ -37,4 +37,18 @@ h1, h2, legend, nav {
     font-style: normal;
 }
 
-    
+#galeria {
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;
+    justify-content:center;
+}
+
+#galeria section {
+    width:18rem;
+}
+
+#galeria img { 
+    width:100%;
+    height:auto;
+}
