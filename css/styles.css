@@ -33,16 +33,18 @@ body {
 .tres-columnas {
     display: flex;
     gap: 2rem;
+    align-items: flex-start;
 }
 
 .tres-columnas > section {
     flex: 1; 
-    width: 33.33%; 
+    width: 33.33%;
+    box-sizing: border-box;
 }
 
 .tres-columnas section img {
     width: 100%;      
-    max-width: 100%;   
+    max-width: 22rem;   
     height: auto;    
     margin-top: 1rem;  
 }
