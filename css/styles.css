@@ -135,3 +135,11 @@ nav ul {
     height:auto;
     display:block;
 }
+
+.cita {
+    margin: 2rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid #0076a3;
+    font-style: italic;  
+    color: #555;
+}
