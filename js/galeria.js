@@ -4,7 +4,7 @@ let nombres = [
   "vectorial elevation",
   "33 questions per minute",
   "body movies",
-  "presencia inestable" // agregar después en obras.html
+  "presencia inestable"
 ]; 
 
 let anios = [ 
@@ -28,7 +28,7 @@ let descripciones = [
   "los participantes controlaban reflectores gigantes por internet para crear composiciones de luz sobre la ciudad.",
   "una computadora genera y muestra preguntas continuamente, explorando la relación entre inteligencia artificial y lenguaje.",
   "la obra utiliza sombras proyectadas por los visitantes para revelar retratos de personas sobre edificios.",
-  "ofrece una nueva perspectiva sobre sus “antimonumentos” y sus dimensiones poéticas y políticas." // agregar después en obras.html 
+  "ofrece una nueva perspectiva sobre sus “antimonumentos” y sus dimensiones poéticas y políticas." 
 
 ];
 
