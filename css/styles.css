@@ -28,6 +28,7 @@ body {
 .dos-columnas {
     display:flex;
     gap:2rem;
+    align-items: flex-start;
 }
 
 .tres-columnas {
@@ -50,10 +51,22 @@ body {
 
 .columna-info {
     width: 35%;
+    flex: 0 0 35%;
+    min-width: 0;
+}
+
+.columna-info img {
+    display: block;
+    width: 100%;   
+    max-width: 100%;  
+    height: auto;   
+    margin-top: 1.5rem; 
 }
 
 .columna-galeria {
     width: 65%;
+    flex: 0 0 35%;
+    min-width: 0;
 }
 
 h1, h2, legend, nav a {
