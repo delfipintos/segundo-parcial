@@ -102,7 +102,7 @@ nav ul {
 }
 
 /* tipografias enlaces etc */
-h1, h2, legend, nav a {
+h1, h2, legend, {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -110,18 +110,28 @@ h1, h2, legend, nav a {
     text-decoration-line: underline; 
 }
 
+nav a {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #2596be;
+    text-decoration: none; 
+}
+
 a {
   display: block;
   color: #495b66; 
   font-weight: 500;
+  text-decoration: none;
 }
 
 a:hover {
   color: #1d2f3b;
+  text-decoration: underline;
 }
 
 nav a:visited {
-  color: #11344a; 
+  color: #0b435b;
 }
 
 /* galeria javascript 2da pág obras.html */
