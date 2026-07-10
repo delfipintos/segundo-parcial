@@ -31,18 +31,20 @@ body {
 }
 
 .tres-columnas {
-    display:flex;
-    gap:2rem;
-}
-
-.tres-columnas {
     display: flex;
     gap: 2rem;
 }
 
-.tres-columnas section, article {
+.tres-columnas > section {
     flex: 1; 
     width: 33.33%; 
+}
+
+.tres-columnas section img {
+    width: 100%;      
+    max-width: 100%;   
+    height: auto;    
+    margin-top: 1rem;  
 }
 
 .columna-info {
