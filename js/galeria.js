@@ -20,7 +20,7 @@ let imagenes = [
   "img/vectorial-elevation.jpg",
   "img/questions-minute.jpg",
   "img/body-movies.jpg",
-  "img/lozano-hemmer-2.jpg"
+  "img/lozano-hemmer-1.jpg"
 ];
 
 let descripciones = [ 
