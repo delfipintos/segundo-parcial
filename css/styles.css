@@ -39,6 +39,7 @@ body {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
+    margin-top: 0;
 }
 
 .tres-columnas > section {
@@ -49,7 +50,12 @@ body {
 }
 
 header p {
+    margin-top: 0;
     margin-bottom: 0.5rem; 
+}
+
+header h1 {
+    margin-bottom: 0.2rem;
 }
 
 .curiosidad {
@@ -108,7 +114,8 @@ nav a:visited {
 
 nav ul {
     margin-top: 0;      
-    padding-left: 1.2rem;  
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 #galeria {
