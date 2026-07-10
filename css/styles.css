@@ -102,7 +102,7 @@ nav ul {
 }
 
 /* tipografias enlaces etc */
-h1, h2, legend, {
+h1, h2, legend {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
