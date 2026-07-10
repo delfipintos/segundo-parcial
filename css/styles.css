@@ -84,6 +84,20 @@ h1, h2, legend, nav a {
     text-decoration-line: underline; 
 }
 
+a {
+  display: block;
+  color: #495b66; 
+  font-weight: 500;
+}
+
+a:hover {
+  color: #1d2f3b;
+}
+
+nav a:visited {
+  color: #11344a; 
+}
+
 #galeria {
     display:flex;
     flex-wrap:wrap;
